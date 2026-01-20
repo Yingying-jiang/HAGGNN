@@ -1,0 +1,27 @@
+{
+    "input_dim": 21,
+    "embedding_dim": 128,
+    "hidden_dim":
+    [ 128,
+      128
+    ],
+    "num_relation": 7,
+    "GeometricRelationalGraphConv": {
+        "input_dim": 21,
+        "hidden_dim": 128,
+        "output_dim": 21,
+        "edge_input_dim": 61,
+        "dropout": 0.05,
+        "dropout_before_conv": 0.2,
+        "activation": "relu",
+        "aggregate_func": "sum"
+    },
+    "edge_input_dim": 61,
+    "batch_norm": true,
+    "activation": "relu",
+    "concat_hidden": true,
+    "short_cut": true,
+    "readout": "sum",
+    "dropout": 0.2,
+    "layer_norm": true
+}
